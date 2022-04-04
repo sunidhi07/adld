@@ -1,0 +1,2 @@
+s1(02Dec2021:17:02:43):  irun -access +rwc encoder_tb.v 
+s2(02Dec2021:17:03:33):  irun -access +rwc encoder_tb.v 
