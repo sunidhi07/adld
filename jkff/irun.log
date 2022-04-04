@@ -1,0 +1,84 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Dec 03, 2021 at 16:24:41 IST
+irun
+	-access +rwc
+	jkff_tb.v
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+irun: *W,DLCVAR (/home/adld11/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+irun: *W,DLCPTH (/home/adld11/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+irun: *W,DLCLAP (/home/adld11/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld11/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+irun: *W,DLCPTH (/home/adld11/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+irun: *W,DLCPTH (/home/adld11/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+irun: *W,DLCPTH (/home/adld11/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+irun: *W,DLCVAR (/home/adld11/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+irun: *W,DLCVAR (/home/adld11/cds.lib,67): cds.lib Invalid environment variable ''.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		jkff_tb
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           5       5
+		Scalar wires:        6       -
+		Always blocks:       2       2
+		Initial blocks:      5       5
+		Cont. assignments:   1       1
+		Pseudo assignments:  4       4
+	Writing initial simulation snapshot: worklib.jkff_tb:v
+Loading snapshot worklib.jkff_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+                   0j=1 k=1 reset=1 clk=0 q=x qnot=x
+                   1j=1 k=1 reset=1 clk=1 q=0 qnot=1
+                   2j=1 k=1 reset=1 clk=0 q=0 qnot=1
+                   3j=1 k=1 reset=1 clk=1 q=0 qnot=1
+                   4j=1 k=1 reset=1 clk=0 q=0 qnot=1
+                   5j=1 k=1 reset=0 clk=1 q=1 qnot=0
+                   6j=1 k=1 reset=0 clk=0 q=1 qnot=0
+                   7j=1 k=1 reset=0 clk=1 q=0 qnot=1
+                   8j=1 k=1 reset=0 clk=0 q=0 qnot=1
+                   9j=1 k=1 reset=0 clk=1 q=1 qnot=0
+                  10j=1 k=1 reset=0 clk=0 q=1 qnot=0
+                  11j=1 k=1 reset=0 clk=1 q=0 qnot=1
+                  12j=1 k=1 reset=0 clk=0 q=0 qnot=1
+                  13j=1 k=1 reset=0 clk=1 q=1 qnot=0
+                  14j=1 k=1 reset=0 clk=0 q=1 qnot=0
+                  15j=1 k=1 reset=0 clk=1 q=0 qnot=1
+                  16j=1 k=1 reset=0 clk=0 q=0 qnot=1
+                  17j=1 k=1 reset=0 clk=1 q=1 qnot=0
+                  18j=1 k=1 reset=0 clk=0 q=1 qnot=0
+                  19j=1 k=1 reset=0 clk=1 q=0 qnot=1
+                  20j=1 k=1 reset=0 clk=0 q=0 qnot=1
+                  21j=1 k=1 reset=0 clk=1 q=1 qnot=0
+                  22j=1 k=1 reset=0 clk=0 q=1 qnot=0
+                  23j=1 k=1 reset=0 clk=1 q=0 qnot=1
+                  24j=1 k=1 reset=0 clk=0 q=0 qnot=1
+                  25j=1 k=1 reset=0 clk=1 q=1 qnot=0
+                  26j=1 k=1 reset=0 clk=0 q=1 qnot=0
+                  27j=1 k=1 reset=0 clk=1 q=0 qnot=1
+                  28j=1 k=1 reset=0 clk=0 q=0 qnot=1
+                  29j=1 k=1 reset=0 clk=1 q=1 qnot=0
+Simulation complete via $finish(1) at time 30 NS + 0
+./jkff_tb.v:16 #25 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Dec 03, 2021 at 16:24:48 IST  (total: 00:00:07)
