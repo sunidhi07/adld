@@ -1,0 +1,40 @@
+`include "decoder.v"
+module decoder_tb;
+reg [2:0] in;
+wire [7:0]out;
+
+decoder DUT (.in(in),.out(out));
+initial
+begin
+$monitor($time,"in =%b out=%b",in,out);
+ in = 3'b000;
+#5 in = 3'b001;
+#5 in = 3'b010;
+#5 in = 3'b011;
+#5 in = 3'b100;
+#5 in = 3'b101;
+#5 in = 3'b110;
+#5 in = 3'b111;#5;
+end 
+endmodule
+
+
+module decoder(in,out);
+input [2:0] in;
+output [7:0] out;
+
+always @(in)
+ begin
+   case(in)
+     3'b000 : begin out =8'b00000001; end
+     3'b001 : begin out =8'b00000010; end
+     3'b010 : begin out =8'b00000100; end
+     3'b011 : begin out =8'b00001000; end
+     3'b100 : begin out =8'b00010000; end
+     3'b101 : begin out =8'b00100000; end
+     3'b110 : begin out =8'b01000000; end
+     3'b111 : begin out =8'b10000000; end
+    endcase
+   end
+endmodule
+
